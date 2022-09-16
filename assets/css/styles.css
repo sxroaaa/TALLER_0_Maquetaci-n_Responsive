@@ -24,7 +24,29 @@ body{
     font-family: 'Marcellus', serif;
 }
 
- 
+.cabecera{
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.cabecera img{
+      width: 40%;
+      max-width: 200px;
+}
+.cabecera i{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+.menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -32,22 +54,212 @@ nav{
     background-color: var(--negro);
     font-family: 'Mercellus', serif;
     font-size: 1.6 rem;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 .menu-item{
     padding: 1.3rem;
+}
+.menu-hr{
+    width: 90%;
+}
+.menu-item{
+    padding: 1rem;
 }
 
 nav a {
     text-decoration: none;
     color: var(--blanco);
     font-size: 1.6rem;
+    text-align: center;
 }
+nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+}
+.navbar-button{
+    background-color:transparent;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+
 .btn{
     text-decoration: none;
     background-color:var(--azuloscuro);
     font-size: 1.6rem;
     border: 2px solid #1b71bd;
     padding: 0.5rem;
+   }
+
+#inicio{
+    display: flex;
+    background-image:url('../img/index/slide1.jpg');
+    background-size: cover;
+    flex-direction: column-reverse;
+    height: 700px;
+}
+
+.texto{
+    color: var(--blanco);
+    background-color: rgba(0, 0, 0, 0.347);
+    padding: 2rem 2rem;
+    font-size: 2rem;
+}
+#description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-description{
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 3rem ;
+    flex-basis: 65%;
+}
+
+.logo-description{
+    flex-basis: 35%;
+    padding: 3rem 3rem 3rem 4rem;
+}
+
+#features{
+    background-image: url(../img/index/bg-features.png);
+    color: var(--blanco);
+    padding-top: 1.5rem;
+
+}
+#features h2{
+    background-color: rgba(0, 0, 0, 0.441);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2rem;
+}
+.feature-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 25%;
+    min-width: 190px;
+    max-width: 230px;
+    margin: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.feature i {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.bell{
+    background-color: #0b386090;
+}
+.bed{
+    background-color: rgba(0, 0, 0, 0.412);
+}
+.wifi{
+    background-color: rgba(0, 0, 0, 0.412);
+}
+.gym{
+    background-color: #0b386090;
+}
+
+#ubicacion{
+    padding-top: 3rem;
+}
+#ubicacion h1{
+     text-align: center;
+     font-size: 3rem;
+}
+#ubicacion p{
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.mapa{
+    display: flex;
+    width: 100%;
+    
+}
+
+.texto1{
+    text-decoration: underline var(--azuloscuro);
+}
+#referencias h2{
+    background-image: url(../img/opinion/vector-comentarios.svg);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 3rem;
+    
+}
+#referencias{
+    display: inline-block;
+    
+}
+.opiniones{
+    color: var(--blanco);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem 2rem 6rem 2rem
+    
+}
+.diana{
+   padding: 1rem;
+  flex-basis: 30%;
+ background-image: url(../img/opinion/Vector-opinion.png);
+ background: rgb(51,51,227);
+background: linear-gradient(16deg, rgba(51,51,227,1) 31%, rgba(4,3,35,1) 99%, rgba(0,212,255,1) 100%);
+ border: 2px solid blue;
+
+}
+.diego{
+
+    flex-basis: 30%;
+    background: rgb(51,51,227);
+    background: linear-gradient(16deg, rgba(51,51,227,1) 31%, rgba(4,3,35,1) 99%, rgba(0,212,255,1) 100%);
+    padding: 1rem;
+    border: 2px solid blue;
    
+}
+
+.diego img{
+    border-radius: 100%;
+    max-width: 20%;
+    max-height: 20%;
+}
+.diana img{
+    border-radius: 100%;
+    max-width: 20%;
+    max-width: 20%;
+}
+.opiniones h4 i{
+   float: left;
+   
+}
+
+.contacto{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    color:#fff;
+    padding: 2rem;
+}
+
+#contactos{
+    background-color:var(--azulnegro);
+   padding: 2rem;
+   font-size: 1rem;
 }
