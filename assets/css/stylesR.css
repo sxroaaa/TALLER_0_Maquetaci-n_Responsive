@@ -1,0 +1,154 @@
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+         :root {
+            --azulclaro: #48D6ED;
+            --azuloscuro: #337AB7;
+            --azulnegro: #303342;
+            --negro: #333333;
+            --negro2: #000;
+            --gris: #B2B3B3;
+            --fondo: #FFFEFC;
+            --verdeazul: #157A8A;
+            --Magenta: #9C2759;
+            --blanco: #fff;
+            --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+        }
+        
+        * {
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            margin: 30px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Marcellus', serif;
+        }
+        
+        header {
+            background-color: var(--negro2);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            background-color: var(--negro2);
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo i {
+            color: var(--blanco);
+            font-size: 3rem;
+        }
+        
+        .logo img {
+            max-width: 200px;
+            width: 40%;
+        }
+        
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-basis: 50%;
+            color: var(--blanco);
+        }
+        
+        nav {
+            background-color: #083860;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5 rem 0;
+        }
+        
+        .menu-hr {
+            background-color: var(--blanco);
+            width: 95%;
+            height: 1px;
+            margin: 1rem 0;
+        }
+        
+        .item {
+            padding: 1rem, 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--blanco);
+            font-family: 'Marcellus', serif;
+            font-size: 1rem;
+        }
+        
+        a:hover {
+            background-color: #083860;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn {
+            color: var(--blanco);
+            font-family: 'marcellus', 'serif';
+            padding: 3rem;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        @media screen and (min-width:768px) {}
+        
+        @media screen and (min-width:1024px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+                background-color: var(--negro2);
+            }
+            .logo i {
+                display: none;
+            }
+            .logo img {
+                width: 100%;
+            }
+            .logo {
+                flex-basis: 50%;
+            }
+            nav a {
+                text-decoration: none;
+                color: var(--blanco);
+                font-family: 'marcellus', 'serif';
+                font-size: 1rem;
+            }
+            a :hover {
+                background-color: transparent;
+                width: auto;
+                color: var(--azuloscuro);
+            }
+            .menu HR {
+                display: none;
+            }
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background-color: transparent;
+                flex-basis: 50%;
+            }
+            .btn {
+                background-color: var(--azuloscuro);
+                color: var(--blanco);
+                padding: 0.5rem 1rem;
+                font-family: 'marcellus', 'serif';
+                font-size: 1.5 rem;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
