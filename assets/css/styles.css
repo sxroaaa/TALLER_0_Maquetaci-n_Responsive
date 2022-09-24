@@ -31,7 +31,7 @@ h5 {
     font-family: 'Marcellus', serif;
 }
 
-.cabecera {
+.logo {
     display: flex;
     background-color: var(--negro);
     align-items: center;
@@ -39,7 +39,7 @@ h5 {
     padding: 1.5rem;
 }
 
-.cabecera img {
+.logo img {
     width: 150px;
 }
 
@@ -256,10 +256,6 @@ nav a:hover {
     border-radius: 100%;
     max-width: 20%;
     max-width: 20%;
-}
-
-.opiniones h4 i {
-    float: left;
 }
 
 .contacto {
